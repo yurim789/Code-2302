@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <link href="main.css" rel="stylesheet" /> -->
+  <title>Sample</title>
+</head>
+<html>
+
+<body>
+  <div class="divClass" id="divId">The standard chunk of Lorem Ipsum
+    <p class="p" id="p1">
+      P1 The standard chunk of Lorem Ipsum
+    </p>
+    <p class="p" id="p2">
+      P2 The standard chunk of Lorem Ipsum
+    </p>
+    <p class="p" id="p3">
+      P3 The standard chunk of Lorem Ipsum
+    </p>
+  </div>
+  <script>
+    const div = document.querySelector('div');
+    div.firstElementChild.innerHTML = "Hi I'm P1";
+    div.lastElementChild.innerHTML = "Hi I'm P3";
+    const child = document.querySelector('#p2');
+    child.parentElement.style.fontSize = '24px';
+    child.nextElementSibling.style.color = 'blue';
+    child.previousElementSibling.style.color = 'red';
+  </script>
+</body>
+
+</html>

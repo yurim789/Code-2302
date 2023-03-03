@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <link href="main.css" rel="stylesheet" /> -->
+  <title>Sample</title>
+</head>
+<html>
+
+<body>
+  <div>This is parent element
+    <p>child p1</p>
+    <p>child p2</p>
+    <p>child p3</p>
+    <p>child p4</p>
+    <p>child p5</p>
+  </div>
+  <div id='display'></div>
+
+  <script>
+    const display = document.querySelector('#display');
+    const arr = document.querySelectorAll('p');
+    arr.forEach((a) => {
+      display.innerHTML += a.innerHTML + " : ";
+      display.style.color = 'blue';
+    })
+  </script>
+</body>
+
+</html>

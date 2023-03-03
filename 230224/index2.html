@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <link href="main.css" rel="stylesheet" /> -->
+  <title>Sample</title>
+</head>
+<html>
+
+<body>
+
+  <script>
+    // const numbers = [1, 2, 3, 4, 5];
+    // print(numbers);
+    // // push
+    // numbers.push(6);
+    // print(numbers);
+    // numbers.push(7, 8, 9);
+    // print(numbers);
+
+    // // pop
+    // numbers.pop();
+    // print(numbers);
+
+    // // concat
+    // const numbersNew = [10, 11, 12];
+    // const merged = numbers.concat(numbersNew);
+    // print(merged);
+
+    // // reverse
+    // const rev = numbers.reverse();
+    // print(rev);
+
+    // // join
+    // const arr = ['hello', 'my', 'name'];
+    // print(arr.join(':'));
+
+    // 아주 중요!!! split, splice, slice
+    // split 원본유지
+    // 조건을 만족시키고 배열에 담아서 준다
+    // const strEx = '032-0000-1111';
+    // const strExMod = strEx.split('-');
+    // print(strExMod);
+    // print(strExMod[0]);
+    // print(strEx);
+
+    const animalArray = ['rabbit', 'cow', 'pig', 'cat', 'dog'];
+    // splice 원본변경됨 !!!    
+    // const result1 = animalArray.splice(2);
+    // print(result1);
+    // print(animalArray);
+    // const result2 = animalArray.splice(2, 2); // 중요한 용법
+    // print(result2);
+    // print(animalArray);
+    // const result3 = animalArray.splice(2, 0, 'frog'); // 원본에 추가
+    // print(animalArray); // 이경우 result3는 빈 배열
+
+    // slice  원본유지
+    const result4 = animalArray.slice(3);
+    print(result4);
+    print(animalArray);
+
+    function print(arr) {
+      const p = document.createElement('p');
+      p.innerHTML = arr;
+      document.body.appendChild(p);
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <link href="main.css" rel="stylesheet" /> -->
+  <title>Sample</title>
+</head>
+<html>
+
+<body>
+
+  <script>
+    // filter, map, reduce  ****** 제일 중요 ******
+    // map
+    const numbers = [1, 2, 3, 4, 5];
+    const result = numbers.map(number => number * number);
+    print(numbers);
+    print(result);
+
+    const 프로그래밍언어 = ['javascript', 'java', 'C#', 'C++'];
+    const result2 = 프로그래밍언어.map(언어 => 언어.length);
+    print(result2);
+
+    const users = [{
+        name: 'Smith',
+        age: 22
+      },
+      {
+        name: 'Bill',
+        age: 32
+      },
+      {
+        name: 'Andy',
+        age: 41
+      },
+      {
+        name: 'Tom',
+        age: 38
+      }
+    ];
+    const result3 = users.map(user => user.age);
+    print(result3);
+
+    function print(arr) {
+      const p = document.createElement('p');
+      p.innerHTML = arr;
+      document.body.appendChild(p);
+    }
+  </script>
+
+</body>
+
+</html>

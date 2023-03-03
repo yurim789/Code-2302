@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <link href="main.css" rel="stylesheet" /> -->
+  <title>Sample</title>
+</head>
+<html>
+
+<body>
+
+  <script>
+    // filter, map, reduce  ****** 제일 중요 ******
+    // filter
+    const numbers = [1, 2, 3, 4, 5];
+    // const result = numbers.filter((number) => {
+    //   return number > 3;
+    // })
+    const result = numbers.filter(number => number > 3)
+    print(result);
+    print(numbers);
+
+    const guys = [{
+        name: 'Smith',
+        주급: 1000000
+      },
+      {
+        name: 'Bill',
+        주급: 500000
+      },
+      {
+        name: 'Andy',
+        주급: 300000
+      }
+    ];
+    // const result2 = guys.filter((guy) => {
+    //   return guy.주급 > 400000;
+    // })
+    const result2 = guys.filter(guy => guy.주급 > 400000);
+    console.log(result2);
+
+
+
+    function print(arr) {
+      const p = document.createElement('p');
+      p.innerHTML = arr;
+      document.body.appendChild(p);
+    }
+  </script>
+
+</body>
+
+</html>

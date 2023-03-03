@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <link href="main.css" rel="stylesheet" /> -->
+  <title>Sample</title>
+</head>
+<html>
+
+<body>
+
+  <script>
+    // filter, map, reduce  ****** 제일 중요 ******
+    // reduce
+    const numbers = [11, 22, 33, 44, 55];
+    //const result = numbers.reduce((n1, n2) => n1 + n2);
+    const result = numbers.reduce((n1, n2) => {
+      //console.log(n1, n2);
+      return n1 + n2;
+    })
+    //print(result);
+
+    const arr = [
+      [0, 1],
+      [2, 3],
+      [4, 5]
+    ];
+    // [0,1,2,3,4,5]
+    const result2 = arr.reduce((a, b) => {
+      console.log(a);
+      console.log(b);
+      return a.concat(b);
+    })
+    console.log(result2);
+    print(result2);
+
+
+    function print(arr) {
+      const p = document.createElement('p');
+      p.innerHTML = arr;
+      document.body.appendChild(p);
+    }
+  </script>
+
+</body>
+
+</html>
