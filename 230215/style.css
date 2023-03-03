@@ -1,0 +1,17 @@
+.alertBox {
+  padding: 20px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.blue {
+  background-color: deepskyblue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.gray {
+  background-color: gray;
+}
